@@ -1,0 +1,19 @@
+{
+  "name": "chinmaya-vidyalaya-bokaro",
+  "version": "1.0.0",
+  "description": "Chinmaya Vidyalaya Bokaro School Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "school",
+    "website",
+    "chinmaya"
+  ],
+  "author": "Chinmaya Vidyalaya Bokaro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Chinmaya Vidyalaya Bokaro | Shaping Minds, Building Character</title>
+  <meta name="description" content="Established in 1977, Chinmaya Vidyalaya Bokaro Steel City is a premier CBSE co-educational English-medium senior secondary school focusing on academic excellence and value-based education.">
+  <meta name="keywords" content="Chinmaya Vidyalaya, Bokaro Steel City, CBSE Schools in Jharkhand, Best Schools in Bokaro, Senior Secondary School, Chinmaya Mission Education">
+  <meta name="author" content="Chinmaya Vidyalaya Bokaro">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chinmaya Vidyalaya Bokaro | Shaping Minds, Building Character">
+  <meta property="og:description" content="A premier educational institution in Bokaro Steel City nurturing young minds with CBSE curriculum and Indian values.">
+  <meta property="og:image" content="assets/campus_preview.jpg">
+
+  <!-- Tabler Icons Webfont -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  
+  <!-- Styling Sheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Premium Custom Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' fill='none'%3E%3Ccircle cx='20' cy='20' r='18' stroke='%23c9a227' stroke-width='2.5'/%3E%3Cpath d='M20 7 L20 33 M7 20 L33 20' stroke='%23c9a227' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M20 7 C20 7 13 13 13 20 C13 27 20 33 20 33' fill='none' stroke='rgba%28201,162,39,.4%29' stroke-width='2'/%3E%3Ccircle cx='20' cy='20' r='4.5' fill='%23c9a227'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- TOP INFORMATION BAR -->
+  <div class="topbar">
+    <div class="topbar-contact">
+      <span><i class="ti ti-phone"></i> +91-6542-223456</span>
+      <span><i class="ti ti-mail"></i> info@chinmayabokaro.edu.in</span>
+    </div>
+    <div class="topbar-links">
+      <a href="#admissions">Admissions 2026-27 Open</a>
+      <a href="#" onclick="triggerPortalLogin('student')">Student Portal</a>
+      <a href="#" onclick="triggerPortalLogin('parent')">Parent Portal</a>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER / NAVIGATION -->
+  <header id="mainHeader">
+    <div class="navbar">
+      <a href="#home" class="nav-brand" id="navBrandLink">
+        <div class="nav-logo-container">
+          <!-- Custom SVG School Logo -->
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="#c9a227" stroke-width="2.5"/>
+            <path d="M20 7 L20 33 M7 20 L33 20" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+            <path d="M20 7 C20 7 13 13 13 20 C13 27 20 33 20 33" fill="none" stroke="rgba(201,162,39,.4)" stroke-width="2"/>
+            <circle cx="20" cy="20" r="4.5" fill="#c9a227"/>
+          </svg>
+        </div>
+        <div class="nav-title">
+          <h1>Chinmaya Vidyalaya</h1>
+          <p>BOKARO STEEL CITY · CBSE AFFILIATED</p>
+        </div>
+      </a>
+
+      <!-- Menu Navigation -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#academics" class="nav-item">Academics</a>
+        <a href="#facilities" class="nav-item">Facilities</a>
+        <a href="#admissions" class="nav-item">Admissions</a>
+        <a href="#news" class="nav-item">News</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <!-- Utilities -->
+      <div class="nav-utils">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme">
+          <i class="ti ti-moon"></i>
+          <i class="ti ti-sun"></i>
+        </button>
+        <button class="btn btn-secondary nav-login-btn" onclick="triggerPortalLogin('student')">
+          <i class="ti ti-login"></i> Login
+        </button>
+        <div class="hamburger" id="hamburgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SLIDER SECTION -->
+  <section class="hero-slider-section" id="home">
+    <div class="hero-slider">
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <div class="slide-overlay"></div>
+        <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="slide-content">
+          <div class="slide-badge">Est. 1977 · Legacy of Learning</div>
+          <h2>Shaping Minds,<br><span>Building Character</span></h2>
+          <p>Nurturing young minds with a perfect blend of high-end academic excellence, holistic personal growth, and timeless values from Pre-Kindergarten to Grade XII.</p>
+          <div class="slide-actions">
+            <button class="btn btn-primary" onclick="scrollToSection('admissions')">
+              <i class="ti ti-pencil-plus"></i> Apply Online
+            </button>
+            <button class="btn btn-outline" onclick="scrollToSection('about')">
+              Discover Legacy
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="slide-overlay"></div>
+        <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="slide-content">
+          <div class="slide-badge">World-Class infrastructure</div>
+          <h2>Empowering through<br><span>Modern Innovation</span></h2>
+          <p>63 digital smart classrooms, modern physics, chemistry, biology and computer sciences laboratories, supporting children to explore, innovate, and create.</p>
+          <div class="slide-actions">
+            <button class="btn btn-primary" onclick="scrollToSection('facilities')">
+              Explore Facilities
+            </button>
+            <button class="btn btn-outline" onclick="scrollToSection('academics')">
+              Our Curriculums
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="slide-overlay"></div>
+        <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="slide-content">
+          <div class="slide-badge">Sports & Co-Curriculars</div>
+          <h2>Nurturing Talents<br><span>Beyond Classrooms</span></h2>
+          <p>Promoting sportsmanship, artistic creativity, leadership development and dynamic community service through robust co-curricular portfolios.</p>
+          <div class="slide-actions">
+            <button class="btn btn-primary" onclick="scrollToSection('contact')">
+              Contact School
+            </button>
+            <button class="btn btn-outline" onclick="scrollToSection('news')">
+              Latest Highlights
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrow Controls -->
+    <button class="slider-arrow prev" id="sliderPrevBtn" aria-label="Previous Slide">
+      <i class="ti ti-chevron-left"></i>
+    </button>
+    <button class="slider-arrow next" id="sliderNextBtn" aria-label="Next Slide">
+      <i class="ti ti-chevron-right"></i>
+    </button>
+
+    <!-- Navigation dots -->
+    <div class="slider-dots" id="sliderDots"></div>
+
+    <!-- Floating Statistics Box -->
+    <div class="hero-stats">
+      <div class="stat-box">
+        <div class="stat-num" id="statYears">45+</div>
+        <div class="stat-label">Years Legacy</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num" id="statStudents">2000+</div>
+        <div class="stat-label">Enrolled</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num" id="statFaculty">120+</div>
+        <div class="stat-label">Faculty</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK ACTIONS OVERLAY BAR -->
+  <div class="quick-bar">
+    <div class="quick-item" onclick="triggerPortalLogin('student')">
+      <i class="ti ti-device-laptop"></i>
+      <span>Student Portal</span>
+    </div>
+    <div class="quick-item" onclick="triggerPortalLogin('parent')">
+      <i class="ti ti-users"></i>
+      <span>Parent Dashboard</span>
+    </div>
+    <div class="quick-item" onclick="scrollToSection('admissions')">
+      <i class="ti ti-file-plus"></i>
+      <span>Online Admissions</span>
+    </div>
+    <div class="quick-item" onclick="scrollToSection('admissions')">
+      <i class="ti ti-receipt"></i>
+      <span>Fee Estimator</span>
+    </div>
+    <div class="quick-item" onclick="scrollToSection('news')">
+      <i class="ti ti-calendar-event"></i>
+      <span>Latest Events</span>
+    </div>
+    <div class="quick-item" onclick="scrollToSection('contact')">
+      <i class="ti ti-map-pin"></i>
+      <span>Locate On Map</span>
+    </div>
+  </div>
+
+  <!-- ABOUT LEGACY SECTION -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-visual">
+        <h3>🏫 Empowering Generations Since 1977</h3>
+        <p>Chinmaya Vidyalaya, Bokaro Steel City is a premier co-educational English-medium Senior Secondary School affiliated with CBSE (Affiliation No. 3430013). For over four decades, we have remained committed to academic excellence, value guidance, and personal integration.</p>
+        <p>Managed under the spiritual principles of the Chinmaya Mission, we aim to deliver holistic school education that empowers the head, the heart, and the hands.</p>
+        <div class="about-highlights">
+          <div class="highlight-badge">
+            <i class="ti ti-award"></i>
+            <span>CBSE Affiliated</span>
+          </div>
+          <div class="highlight-badge">
+            <i class="ti ti-school"></i>
+            <span>Grade Pre-K to XII</span>
+          </div>
+          <div class="highlight-badge">
+            <i class="ti ti-users"></i>
+            <span>Co-Educational</span>
+          </div>
+          <div class="highlight-badge">
+            <i class="ti ti-building-community"></i>
+            <span>Active alumni</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-point-list">
+        <div class="section-header">
+          <span class="section-label">Our Legacy</span>
+          <h2 class="section-title">Why Choose Chinmaya?</h2>
+          <p class="section-subtitle">A sanctuary of comprehensive development providing deep intellectual values and active physical learning.</p>
+        </div>
+
+        <div class="about-point">
+          <div class="about-point-icon">
+            <i class="ti ti-brain"></i>
+          </div>
+          <div class="about-point-text">
+            <h4>Academic Innovation</h4>
+            <p>Our activity-based academic learning structure delivers conceptual knowledge and promotes logic reasoning across grade curriculums.</p>
+          </div>
+        </div>
+
+        <div class="about-point">
+          <div class="about-point-icon">
+            <i class="ti ti-heart-handshake"></i>
+          </div>
+          <div class="about-point-text">
+            <h4>Spiritual Values Integration</h4>
+            <p>Rooted in values of community, integrity, respect, and responsibility, helping students thrive as active, conscious global citizens.</p>
+          </div>
+        </div>
+
+        <div class="about-point">
+          <div class="about-point-icon">
+            <i class="ti ti-trophy"></i>
+          </div>
+          <div class="about-point-text">
+            <h4>All-Round Development</h4>
+            <p>Providing dynamic avenues in performing arts, sciences exhibitions, sports matches, and multi-school championships.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORLD CLASS FACILITIES SHOWCASE -->
+  <section class="facilities-section" id="facilities">
+    <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+      <span class="section-label">Campus Infrastructure</span>
+      <h2 class="section-title">World-Class Facilities</h2>
+      <p class="section-subtitle" style="margin: 0 auto;">Providing students with highly modern, technologically equipped amenities supporting comprehensive growth.</p>
+    </div>
+
+    <div class="fac-grid">
+      <!-- Smart Classrooms -->
+      <div class="fac-card">
+        <div class="fac-icon-container">
+          <i class="ti ti-device-laptop"></i>
+        </div>
+        <h4>Smart Classrooms</h4>
+        <p>63 digital classrooms equipped with interactive smart displays, multimedia access, and rapid web learning support.</p>
+      </div>
+
+      <!-- Science labs -->
+      <div class="fac-card">
+        <div class="fac-icon-container">
+          <i class="ti ti-microscope"></i>
+        </div>
+        <h4>Science Laboratories</h4>
+        <p>Highly advanced physics, chemistry, and biology labs allowing rich practical experiments and dynamic research projects.</p>
+      </div>
+
+      <!-- Computer lab -->
+      <div class="fac-card">
+        <div class="fac-icon-container">
+          <i class="ti ti-cpu"></i>
+        </div>
+        <h4>Computer Science Hub</h4>
+        <p>Large IT labs featuring high-speed modern internet computing networks, teaching code architectures and AI designs.</p>
+      </div>
+
+      <!-- Library -->
+      <div class="fac-card">
+        <div class="fac-icon-container">
+          <i class="ti ti-book"></i>
+        </div>
+        <h4>Knowledge Library</h4>
+        <p>Housing thousands of books, journals, scientific papers, alongside digital library consoles for absolute reading enrichment.</p>
+      </div>
+
+      <!-- Sports grounds -->
+      <div class="fac-card">
+        <div class="fac-icon-container">
+          <i class="ti ti-ball-basketball"></i>
+        </div>
+        <h4>Modern Sports Ground</h4>
+        <p>Large active outdoor playgrounds for cricket, football, basketball and tracks encouraging dynamic physical coordination.</p>
+      </div>
+
+      <!-- Arts & Music -->
+      <div class="fac-card">
+        <div class="fac-icon-container">
+          <i class="ti ti-music"></i>
+        </div>
+        <h4>Performing Arts Studios</h4>
+        <p>Specially curated hubs for fine painting, instrumental music compositions, traditional dances, and drama play rehearsals.</p>
+      </div>
+
+      <!-- Transport -->
+      <div class="fac-card">
+        <div class="fac-icon-container">
+          <i class="ti ti-bus"></i>
+        </div>
+        <h4>Fleet Transportation</h4>
+        <p>Highly safe school transport buses encompassing GPS, mobile tracking, and trained logistics across Bokaro Steel City.</p>
+      </div>
+
+      <!-- Health room -->
+      <div class="fac-card">
+        <div class="fac-icon-container">
+          <i class="ti ti-first-aid-kit"></i>
+        </div>
+        <h4>24/7 Campus Medical Hub</h4>
+        <p>On-campus clinic led by licensed health professionals, delivering urgent checkups and student wellness assistance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMICS SECTION & TABS -->
+  <section id="academics">
+    <div class="academics-grid">
+      <div>
+        <div class="section-header">
+          <span class="section-label">Active Learning</span>
+          <h2 class="section-title">Academic Curriculums</h2>
+          <p class="section-subtitle">Our educational pathway focuses on continuous exploration, reasoning depth, and standard-based conceptual excellence.</p>
+        </div>
+
+        <!-- Academics Tabs Nav -->
+        <div class="ac-tabs-nav">
+          <button class="ac-tab-btn active" onclick="switchAcademicTab(event, 'prePrimaryTab')">Pre-Primary</button>
+          <button class="ac-tab-btn" onclick="switchAcademicTab(event, 'primaryTab')">Primary</button>
+          <button class="ac-tab-btn" onclick="switchAcademicTab(event, 'middleTab')">Middle School</button>
+          <button class="ac-tab-btn" onclick="switchAcademicTab(event, 'seniorTab')">Senior Secondary</button>
+        </div>
+
+        <!-- Pre-Primary -->
+        <div class="ac-tab-content active" id="prePrimaryTab">
+          <div class="ac-content-card">
+            <h3>👶 Play-Based Early Development</h3>
+            <p>For Pre-Kindergarten to Kindergarten children, we offer a playway learning model centered on speech expansion, basic spatial analysis, sensory activities, and interactive physical games.</p>
+            <div class="ac-features-grid">
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>Sensory Play Hubs</span></div>
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>Interactive Storytelling</span></div>
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>Foundational Fine Motor Skills</span></div>
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>Social Skill Groups</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Primary -->
+        <div class="ac-tab-content" id="primaryTab">
+          <div class="ac-content-card">
+            <h3>✏️ Building Core Pillars (Grade I - V)</h3>
+            <p>Focuses on mathematical reasoning, language proficiency (English, Hindi), basic environmental studies, and computer logic, structured to build creative thinking habits.</p>
+            <div class="ac-features-grid">
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>Activity-Driven Maths</span></div>
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>Linguistic labs</span></div>
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>EVS Exploratory Trips</span></div>
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>Creative Arts Portfolio</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle School -->
+        <div class="ac-tab-content" id="middleTab">
+          <div class="ac-content-card">
+            <h3>📚 Conceptual Exploration (Grade VI - VIII)</h3>
+            <p>Adapting deep NCERT based curricula across sciences, technologies, histories, and three languages. Focus shifts towards scientific methods, analytical writing, and computational systems.</p>
+            <div class="ac-features-grid">
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>Lab Experiment Logs</span></div>
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>Introduction to Coding</span></div>
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>Integrated Social Studies</span></div>
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>PTM Academic Diagnostics</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Senior Secondary -->
+        <div class="ac-tab-content" id="seniorTab">
+          <div class="ac-content-card">
+            <h3>🎓 Stream Specialisations (Grade IX - XII)</h3>
+            <p>Rigorous preparatory programs preparing students for CBSE board exams, alongside custom coaching for national engineering, medical, and commerce assessments.</p>
+            <div class="ac-features-grid">
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>Physics, Chemistry, Maths, Bio</span></div>
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>Commerce Accountancy, Economics</span></div>
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>Pre-Board Diagnostic Testing</span></div>
+              <div class="ac-feat-item"><i class="ti ti-circle-check"></i> <span>University Entry Guidance</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Academics Sidebar -->
+      <div class="ac-sidebar">
+        <!-- Highlights Box -->
+        <div class="ac-side-card highlights-box">
+          <h4><i class="ti ti-trophy"></i> Academic Highlights</h4>
+          <div class="highlights-list">
+            <div class="highlight-item">
+              <i class="ti ti-circle-check-filled"></i>
+              <span>100% success ratios in CBSE 10th & 12th Board examinations.</span>
+            </div>
+            <div class="highlight-item">
+              <i class="ti ti-circle-check-filled"></i>
+              <span>Highly trained educators with regular pedagogical workshops.</span>
+            </div>
+            <div class="highlight-item">
+              <i class="ti ti-circle-check-filled"></i>
+              <span>Consistently leading in national science exhibitions and Olympiads.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calendar Card -->
+        <div class="ac-side-card">
+          <h4><i class="ti ti-calendar"></i> Academic Calendar</h4>
+          <div class="calendar-list">
+            <div class="calendar-item">
+              <span class="calendar-event">New Session Starts</span>
+              <span class="calendar-date">April 2026</span>
+            </div>
+            <div class="calendar-item">
+              <span class="calendar-event">First Term Assessments</span>
+              <span class="calendar-date">June 2026</span>
+            </div>
+            <div class="calendar-item">
+              <span class="calendar-event">Inter-School Sports</span>
+              <span class="calendar-date">October 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADMISSIONS & FEE ESTIMATOR CALCULATOR -->
+  <section class="admissions-section" id="admissions">
+    <div class="admissions-grid">
+      <!-- Enquiry Wizard Card -->
+      <div class="wizard-card">
+        <div class="wizard-header">
+          <span class="section-label">Enrolment 2026-27</span>
+          <h2 class="section-title" style="font-size: 1.6rem; margin-bottom: 8px;">Admission Enquiry Wizard</h2>
+          <p class="section-subtitle" style="font-size: 0.85rem; margin-bottom: 0;">Complete the steps below to register your school admission enquiry.</p>
+        </div>
+
+        <!-- Step Indicators -->
+        <div class="wizard-steps">
+          <div class="wizard-progress" id="wizardProgressBar"></div>
+          <div class="step-indicator active" id="wizardStepIndicator1">1</div>
+          <div class="step-indicator" id="wizardStepIndicator2">2</div>
+          <div class="step-indicator" id="wizardStepIndicator3">3</div>
+        </div>
+
+        <!-- Form Elements -->
+        <form id="enquiryForm" onsubmit="handleEnquiryFormSubmit(event)">
+          <!-- Step 1: Student Details -->
+          <div class="wizard-step active" id="wizardStep1">
+            <div class="form-group">
+              <label for="studentName">Student Full Name *</label>
+              <input type="text" id="studentName" placeholder="Enter student's full name" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="studentClass">Class Seeking *</label>
+                <select id="studentClass" required>
+                  <option value="">Select Target Class</option>
+                  <option value="Pre-K">Pre-Kindergarten</option>
+                  <option value="KG">Kindergarten</option>
+                  <option value="Primary (I-V)">Primary (Grade I-V)</option>
+                  <option value="Middle (VI-VIII)">Middle School (Grade VI-VIII)</option>
+                  <option value="Senior (IX-XII)">Senior Secondary (Grade IX-XII)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="studentDOB">Date of Birth *</label>
+                <input type="date" id="studentDOB" required>
+              </div>
+            </div>
+            <div class="wizard-actions">
+              <span></span> <!-- Empty span to push Next button right -->
+              <button type="button" class="btn btn-primary" onclick="nextWizardStep(1)">Next Step <i class="ti ti-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- Step 2: Parent Details -->
+          <div class="wizard-step" id="wizardStep2">
+            <div class="form-group">
+              <label for="parentName">Father / Mother Name *</label>
+              <input type="text" id="parentName" placeholder="Enter parent's full name" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="parentPhone">Contact Mobile No *</label>
+                <input type="tel" id="parentPhone" placeholder="Enter 10-digit number" required>
+              </div>
+              <div class="form-group">
+                <label for="parentEmail">Email Address *</label>
+                <input type="email" id="parentEmail" placeholder="Enter email address" required>
+              </div>
+            </div>
+            <div class="wizard-actions">
+              <button type="button" class="btn btn-outline" onclick="prevWizardStep(2)"><i class="ti ti-arrow-left"></i> Previous</button>
+              <button type="button" class="btn btn-primary" onclick="nextWizardStep(2)">Next Step <i class="ti ti-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- Step 3: Address & Declaration -->
+          <div class="wizard-step" id="wizardStep3">
+            <div class="form-group">
+              <label for="resAddress">Residential Address *</label>
+              <textarea id="resAddress" rows="3" placeholder="Enter complete home address" required></textarea>
+            </div>
+            <div class="form-group">
+              <label style="display: flex; align-items: center; gap: 8px; font-size: 0.75rem; cursor: pointer;">
+                <input type="checkbox" id="declarationCheck" required style="width: auto; cursor: pointer;">
+                I declare that the information provided is correct.
+              </label>
+            </div>
+            <div class="wizard-actions">
+              <button type="button" class="btn btn-outline" onclick="prevWizardStep(3)"><i class="ti ti-arrow-left"></i> Previous</button>
+              <button type="submit" class="btn btn-primary"><i class="ti ti-circle-check"></i> Submit Enquiry</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Fee Estimator Calculator Card -->
+      <div class="calc-card">
+        <h3><i class="ti ti-calculator"></i> School Fee Estimator</h3>
+        <p class="section-subtitle" style="font-size: 0.85rem; margin-bottom: 24px;">Select parameters below to dynamically calculate estimated academic fees.</p>
+
+        <div class="calc-selectors">
+          <div class="form-group">
+            <label for="calcClass">Target Class *</label>
+            <select id="calcClass" onchange="calculateSchoolFees()">
+              <option value="Pre-Primary">Pre-Kindergarten - KG</option>
+              <option value="Primary" selected>Primary (Grade I-V)</option>
+              <option value="Middle">Middle School (Grade VI-VIII)</option>
+              <option value="Secondary">Secondary (Grade IX-X)</option>
+              <option value="Senior Science">Sr. Secondary Science (XI-XII)</option>
+              <option value="Senior Commerce">Sr. Secondary Commerce (XI-XII)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="calcTransport">Transport Route *</label>
+            <select id="calcTransport" onchange="calculateSchoolFees()">
+              <option value="none">No School Transport</option>
+              <option value="zoneA">Zone A (Sector 1 to 5) (+ ₹1,200/mo)</option>
+              <option value="zoneB">Zone B (Sector 6 to 12) (+ ₹1,500/mo)</option>
+              <option value="zoneC">Zone C (Bokaro Suburbs) (+ ₹2,000/mo)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Calculation results breakdown -->
+        <div class="calc-results">
+          <div class="calc-row">
+            <span>Admission / Registration Fee (One-Time)</span>
+            <span id="feeAdmission">₹15,000</span>
+          </div>
+          <div class="calc-row">
+            <span>Monthly Tuition Fee</span>
+            <span id="feeTuition">₹2,800</span>
+          </div>
+          <div class="calc-row">
+            <span>Annual Development & Lab Charges</span>
+            <span id="feeAnnual">₹8,000</span>
+          </div>
+          <div class="calc-row">
+            <span>Monthly Transport Charges</span>
+            <span id="feeTransport">₹0</span>
+          </div>
+          <div class="calc-row calc-total">
+            <span>Estimated Initial Outlay</span>
+            <span id="feeTotal">₹25,800</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST NEWS & EVENTS SECTION -->
+  <section id="news">
+    <div class="section-header" style="text-align: center; margin-bottom: 30px;">
+      <span class="section-label">Notice Board</span>
+      <h2 class="section-title">Latest News & Events</h2>
+      <p class="section-subtitle" style="margin: 0 auto;">Stay updated with latest announcements, activity news and school events.</p>
+    </div>
+
+    <!-- Filters Nav -->
+    <div class="filter-nav">
+      <button class="filter-btn active" onclick="filterNews(event, 'all')">All Board</button>
+      <button class="filter-btn" onclick="filterNews(event, 'academic')">Academics</button>
+      <button class="filter-btn" onclick="filterNews(event, 'sports')">Sports</button>
+      <button class="filter-btn" onclick="filterNews(event, 'admission')">Admissions</button>
+    </div>
+
+    <div class="news-grid" id="newsGrid">
+      <!-- Notice 1 -->
+      <div class="news-card" data-category="academic">
+        <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=400&q=80');">
+          <span class="news-tag">Academic</span>
+        </div>
+        <div class="news-body">
+          <div class="news-date"><i class="ti ti-calendar"></i> May 25, 2026</div>
+          <h4>Summer Vacation Class Schedules</h4>
+          <p>School offices will close for student summer break from June 1st. Standard offices remain open. Academic homework is logged on dashboards.</p>
+          <a href="#" class="news-link">Read Notice <i class="ti ti-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Notice 2 -->
+      <div class="news-card" data-category="admission">
+        <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=400&q=80');">
+          <span class="news-tag">Admissions</span>
+        </div>
+        <div class="news-body">
+          <div class="news-date"><i class="ti ti-calendar"></i> May 20, 2026</div>
+          <h4>Admission Assessment Round 3</h4>
+          <p>Dates for standard Grade XI aptitude tests are announced. Eligible parents must confirm registry at the admissions desk by next Tuesday.</p>
+          <a href="#" class="news-link">Read Notice <i class="ti ti-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Notice 3 -->
+      <div class="news-card" data-category="sports">
+        <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=400&q=80');">
+          <span class="news-tag">Sports</span>
+        </div>
+        <div class="news-body">
+          <div class="news-date"><i class="ti ti-calendar"></i> May 15, 2026</div>
+          <h4>Inter-School Sports Gala Winners</h4>
+          <p>Chinmaya Vidyalaya Bokaro wins first place in the Inter-School Basketball Tournament. Congratulations to our senior team players!</p>
+          <a href="#" class="news-link">Read Notice <i class="ti ti-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTALS LANDING DECK -->
+  <section class="portal-section" id="portals">
+    <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+      <span class="section-label">Digital Campus</span>
+      <h2 class="section-title">Interactive Portals</h2>
+      <p class="section-subtitle" style="margin: 0 auto; color: #c9daf8;">Login to your respective mock panels to access dashboards, attendances, assignment logs, and profiles.</p>
+    </div>
+
+    <div class="portal-grid">
+      <!-- Student Card -->
+      <div class="portal-card">
+        <i class="ti ti-school"></i>
+        <h3>Student Portal</h3>
+        <p>Access homework checklists, dynamic mark sheets, profile details, and daily class timetables.</p>
+        <button class="btn btn-primary" onclick="triggerPortalLogin('student')">
+          <i class="ti ti-login"></i> Student Login
+        </button>
+      </div>
+
+      <!-- Parent Card -->
+      <div class="portal-card">
+        <i class="ti ti-users-group"></i>
+        <h3>Parent Portal</h3>
+        <p>Track your ward's attendance charts, report grades, monthly fee receipts, and send communications to administration.</p>
+        <button class="btn btn-primary" onclick="triggerPortalLogin('parent')">
+          <i class="ti ti-login"></i> Parent Login
+        </button>
+      </div>
+
+      <!-- Teacher Card -->
+      <div class="portal-card">
+        <i class="ti ti-teacher"></i>
+        <h3>Teacher Portal</h3>
+        <p>Log student grades, upload online assignments, manage attendance registries, and schedule classroom tests.</p>
+        <button class="btn btn-primary" onclick="triggerPortalLogin('teacher')">
+          <i class="ti ti-login"></i> Teacher Login
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & INTERACTIVE MAP MAP -->
+  <section id="contact">
+    <div class="contact-grid">
+      <!-- Info Form -->
+      <div class="contact-info">
+        <div class="section-header">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title">Contact School Offices</h2>
+          <p class="section-subtitle">We are here to support your questions. Reach out to school admin panels during office hours.</p>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="ti ti-map-pin"></i></div>
+          <div class="contact-text">
+            <h4>Campus Address</h4>
+            <p>Sector 5C, Bokaro Steel City, Jharkhand - 827006</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="ti ti-mail"></i></div>
+          <div class="contact-text">
+            <h4>Email Queries</h4>
+            <p>General: info@chinmayabokaro.edu.in<br>Admissions: admissions@chinmayabokaro.edu.in</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="ti ti-phone"></i></div>
+          <div class="contact-text">
+            <h4>Reception Phones</h4>
+            <p>+91-6542-223456, +91-6542-223457 (08:00 AM - 02:00 PM)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Google Map -->
+      <div>
+        <h4 style="font-family: 'Outfit', sans-serif; font-size: 1.1rem; color: var(--primary); margin-bottom: 20px; display: flex; align-items: center; gap: 8px;">
+          <i class="ti ti-map" style="color: var(--secondary);"></i> School Location Map
+        </h4>
+        <div class="map-canvas-container">
+          <iframe 
+            src="https://maps.google.com/maps?q=Chinmaya%20Vidyalaya,%20Sector%205,%20Bokaro%20Steel%20City,%20Jharkhand&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREMIUM FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <!-- Col 1 -->
+      <div class="footer-col">
+        <h3>Chinmaya Vidyalaya</h3>
+        <p>A premiere educational beacon managed by Chinmaya Mission, fostering academic brilliance and values integration across Bokaro Steel City since 1977.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter"><i class="ti ti-brand-twitter"></i></a>
+          <a href="#" class="social-btn" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
+          <a href="#" class="social-btn" aria-label="Linkedin"><i class="ti ti-brand-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="footer-col">
+        <h4>Portals Link</h4>
+        <div class="footer-links">
+          <a href="#" onclick="triggerPortalLogin('student')">Student Portal Log</a>
+          <a href="#" onclick="triggerPortalLogin('parent')">Parent Portal Log</a>
+          <a href="#" onclick="triggerPortalLogin('teacher')">Faculty Database</a>
+          <a href="#admissions">Online Fee Estimator</a>
+        </div>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="footer-col">
+        <h4>Our School</h4>
+        <div class="footer-links">
+          <a href="#about">Legacy and Mission</a>
+          <a href="#facilities">Campus Infrastructure</a>
+          <a href="#academics">Academic Syllabus</a>
+          <a href="#news">Notices & News</a>
+        </div>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="footer-col">
+        <h4>Affiliations</h4>
+        <p style="font-size: 0.8rem; line-height: 1.6; margin: 0;">CBSE School Affiliation Code: 3430013<br>School School Code: 66203<br>School Board: Central Board of Secondary Education, New Delhi</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Chinmaya Vidyalaya Bokaro. All rights reserved.</p>
+      <p>Affiliated with CBSE, New Delhi</p>
+    </div>
+  </footer>
+
+  <!-- MODAL: LOGIN DIALOG -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeLoginModal()"><i class="ti ti-x"></i></button>
+      <div class="modal-icon">
+        <i class="ti ti-user-circle"></i>
+      </div>
+      <h2 id="loginModalTitle">Student Login</h2>
+      <p id="loginModalDesc">Access mock profiles, attendances, and class files.</p>
+
+      <form id="portalLoginForm" onsubmit="handlePortalLogin(event)">
+        <!-- Hidden input storing login type (student/parent/teacher) -->
+        <input type="hidden" id="loginTypeField" value="student">
+        
+        <div class="form-group">
+          <label for="loginUserId" id="loginUserIdLabel">Portal User ID / Email *</label>
+          <input type="text" id="loginUserId" placeholder="Enter Email or User ID" required>
+          <p style="font-size: 0.65rem; color: var(--text-muted); margin-top: 6px; font-weight: 500;" id="loginHintText">Hint: Use 'student123' or your registered whitelisted email.</p>
+        </div>
+        <div class="form-group" style="margin-bottom: 24px;">
+          <label for="loginUserPass">Password *</label>
+          <input type="password" id="loginUserPass" placeholder="Enter secure password" value="password123" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          Authenticate <i class="ti ti-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- PORTALS OVERLAY FULL SCREEN DASHBOARD -->
+  <div class="portal-dashboard-overlay" id="portalDashboard">
+    <div class="dashboard-layout">
+      <!-- Dashboard Sidebar -->
+      <aside class="dashboard-sidebar">
+        <div class="sidebar-logo">
+          <div class="sidebar-logo-icon">
+            <i class="ti ti-chart-bar"></i>
+          </div>
+          <div class="sidebar-brand">
+            <h3>Chinmaya Portals</h3>
+            <p id="sidebarPortalType">STUDENT DASHBOARD</p>
+          </div>
+        </div>
+
+        <ul class="sidebar-nav">
+          <li class="sidebar-item active" onclick="switchDashboardView('overview')">
+            <i class="ti ti-layout-dashboard"></i> <span>Overview Summary</span>
+          </li>
+          <li class="sidebar-item" id="sidebarItemSecondary" onclick="switchDashboardView('academics')">
+            <i class="ti ti-books"></i> <span id="sidebarAcademicsLabel">My Grades</span>
+          </li>
+          <li class="sidebar-item" onclick="switchDashboardView('schedule')">
+            <i class="ti ti-calendar-time"></i> <span>Calendar Schedule</span>
+          </li>
+          <li class="sidebar-item" id="sidebarItemAdmin" style="display: none;" onclick="switchDashboardView('admin')">
+            <i class="ti ti-shield-lock"></i> <span>Admin Panel</span>
+          </li>
+        </ul>
+
+        <div class="sidebar-footer">
+          <button class="sidebar-item" style="background: none; border: none; width: 100%; text-align: left;" onclick="logoutPortal()">
+            <i class="ti ti-logout"></i> <span>Sign Out Portal</span>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Dashboard Main View -->
+      <main class="dashboard-main">
+        <div class="dashboard-header">
+          <div class="dashboard-welcome">
+            <h2 id="dbWelcomeMsg">Welcome Back, Student!</h2>
+            <p id="dbSessionMsg">Academic Session: 2026 - 2027 · Standard X-A</p>
+          </div>
+          <div class="dashboard-user-profile">
+            <div class="user-avatar" id="dbUserAvatar">S</div>
+            <div class="user-meta">
+              <h4 id="dbUserName">Rahul Kumar</h4>
+              <p id="dbUserRole">Roll Number: 24</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard Views -->
+        <!-- VIEW 1: OVERVIEW -->
+        <div id="dbViewOverview">
+          <div class="dashboard-grid">
+            <!-- Left Side Details -->
+            <div>
+              <div class="dashboard-card">
+                <div class="dashboard-card-title">
+                  <span>Attendance Record</span>
+                  <span style="font-size: 0.75rem; color: var(--success); font-weight: 700;">GOOD STANDING</span>
+                </div>
+                <div class="db-stats-row">
+                  <div class="db-stat-item">
+                    <div class="db-stat-val" id="dbTotalClasses">180</div>
+                    <div class="db-stat-lbl">Total Sessions</div>
+                  </div>
+                  <div class="db-stat-item">
+                    <div class="db-stat-val" id="dbAttendedClasses">162</div>
+                    <div class="db-stat-lbl">Attended Logs</div>
+                  </div>
+                  <div class="db-stat-item">
+                    <div class="db-stat-val" id="dbAbsentClasses">18</div>
+                    <div class="db-stat-lbl">Absent Logs</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Interactive Radial Chart -->
+              <div class="dashboard-card">
+                <div class="dashboard-card-title">Live Attendance Percentage</div>
+                <div class="radial-chart-box">
+                  <svg class="radial-svg" viewBox="0 0 160 160">
+                    <circle class="radial-track" cx="80" cy="80" r="70"/>
+                    <circle class="radial-progress" id="dbRadialProgress" cx="80" cy="80" r="70"/>
+                  </svg>
+                  <div class="radial-percentage" id="dbRadialPercentText">90%</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side Details (Homework/Actions) -->
+            <div>
+              <div class="dashboard-card" id="dbWidgetCard">
+                <div class="dashboard-card-title" id="dbWidgetTitle">Assignments Queue</div>
+                
+                <!-- Dynamic Widget list filled in JS (Student Assignment or parent logs) -->
+                <div class="class-schedule-list" id="dbWidgetList">
+                  <div class="schedule-card">
+                    <div class="schedule-details">
+                      <h4>Maths: Trigonometry Assignment</h4>
+                      <p>Due: Tomorrow, 02:00 PM</p>
+                    </div>
+                    <span class="schedule-time" style="color: var(--danger);">URGENT</span>
+                  </div>
+                  <div class="schedule-card" style="border-left-color: var(--success);">
+                    <div class="schedule-details">
+                      <h4>Science: Physics Lab Report</h4>
+                      <p>Due: Friday, 10:00 AM</p>
+                    </div>
+                    <span class="schedule-time" style="color: var(--success);">PENDING</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIEW 2: ACADEMICS / GRADES -->
+        <div id="dbViewAcademics" style="display: none;">
+          <div class="dashboard-card">
+            <div class="dashboard-card-title">Grade Performance Analysis</div>
+            <p class="section-subtitle" style="font-size: 0.85rem; margin-bottom: 24px;">Breakdown of academic grades achieved in the recent evaluation cycle.</p>
+            
+            <div class="mock-chart-container" id="gradeChartContainer">
+              <!-- Visual Mock Bar Charts rendered in JS -->
+              <div class="chart-bar-wrapper">
+                <div class="chart-bar" style="height: 85%;">
+                  <span class="chart-bar-val">85%</span>
+                </div>
+                <span class="chart-bar-label">English</span>
+              </div>
+              <div class="chart-bar-wrapper">
+                <div class="chart-bar" style="height: 92%;">
+                  <span class="chart-bar-val">92%</span>
+                </div>
+                <span class="chart-bar-label">Mathematics</span>
+              </div>
+              <div class="chart-bar-wrapper">
+                <div class="chart-bar" style="height: 78%;">
+                  <span class="chart-bar-val">78%</span>
+                </div>
+                <span class="chart-bar-label">Science</span>
+              </div>
+              <div class="chart-bar-wrapper">
+                <div class="chart-bar" style="height: 88%;">
+                  <span class="chart-bar-val">88%</span>
+                </div>
+                <span class="chart-bar-label">Computer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIEW 3: SCHEDULE / CALENDAR -->
+        <div id="dbViewSchedule" style="display: none;">
+          <div class="dashboard-card">
+            <div class="dashboard-card-title">Today's Class Timetable</div>
+            <p class="section-subtitle" style="font-size: 0.85rem; margin-bottom: 24px;">Daily routine log for live school classes and subjects.</p>
+            
+            <div class="class-schedule-list" id="dbScheduleList">
+              <div class="schedule-card">
+                <div class="schedule-details">
+                  <h4>Subject Class: Mathematics (Trigonometry)</h4>
+                  <p>Teacher: Mr. R. Prasad · Classroom A2</p>
+                </div>
+                <span class="schedule-time">08:30 - 09:15</span>
+              </div>
+              <div class="schedule-card">
+                <div class="schedule-details">
+                  <h4>Subject Class: Physics Lab</h4>
+                  <p>Teacher: Mrs. S. Sen · Science Lab B</p>
+                </div>
+                <span class="schedule-time">09:15 - 10:00</span>
+              </div>
+              <div class="schedule-card">
+                <div class="schedule-details">
+                  <h4>Subject Class: English Literature</h4>
+                  <p>Teacher: Mr. A. Roy · Classroom A2</p>
+                </div>
+                <span class="schedule-time">10:15 - 11:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIEW 4: TEACHER ADMIN PANEL -->
+        <div id="dbViewAdmin" style="display: none;">
+          <div class="dashboard-grid" style="grid-template-columns: 1.25fr 0.75fr;">
+            <!-- Left Side: Admissions List -->
+            <div class="dashboard-card">
+              <div class="dashboard-card-title">
+                <span>Admissions Enquiries Log</span>
+                <button class="btn btn-outline" style="padding: 6px 12px; font-size: 0.72rem;" onclick="refreshAdmissionsLog()">
+                  <i class="ti ti-refresh"></i> Refresh
+                </button>
+              </div>
+              <p class="section-subtitle" style="font-size: 0.8rem; margin-bottom: 12px; max-width: 100%;">Database log of student admission enquiries submitted online.</p>
+              
+              <div class="admin-table-container">
+                <table class="admin-table">
+                  <thead>
+                    <tr>
+                      <th>Student Name</th>
+                      <th>Class Seek</th>
+                      <th>Parent Name</th>
+                      <th>Phone</th>
+                      <th>Email</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminAdmissionsTableBody">
+                    <tr>
+                      <td colspan="5" style="text-align: center; color: var(--text-muted);">No enquiries logged.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+            <!-- Right Side: Email Whitelist Editor -->
+            <div class="dashboard-card">
+              <div class="dashboard-card-title">
+                <span>Student Email Whitelist</span>
+              </div>
+              <p class="section-subtitle" style="font-size: 0.8rem; margin-bottom: 12px; max-width: 100%;">Whitelisted student emails permitted to authenticate portals.</p>
+              
+              <div class="whitelist-emails-container" id="adminWhitelistContainer">
+                <!-- Populated dynamically via app.js -->
+              </div>
+              
+              <form class="admin-form-inline" id="adminWhitelistForm" onsubmit="handleWhitelistAdd(event)">
+                <input type="email" id="whitelistNewEmail" placeholder="Enter student email to allow..." required style="padding: 8px 12px; font-size: 0.8rem; height: 38px;">
+                <button type="submit" class="btn btn-primary" style="padding: 0 16px; height: 38px; font-size: 0.8rem;">Add</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Script Modules -->
+  <script src="app.js"></script>
+</body>
+</html>
