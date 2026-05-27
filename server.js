@@ -8,7 +8,9 @@ const PORT = process.env.PORT || 3000;
 // Body parsing middleware
 app.use(express.json());
 
-// Serve static assets from the current root directory
+// Serve static assets
+const distPath = path.join(__dirname, 'dist');
+app.use(express.static(distPath));
 app.use(express.static(__dirname));
 
 /* ==========================================
@@ -125,7 +127,12 @@ app.post('/api/login', (req, res) => {
 
 // Serve frontend home page as fallback for single-page routing
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  const distIndex = path.join(distPath, 'index.html');
+  if (require('fs').existsSync(distIndex)) {
+    res.sendFile(distIndex);
+  } else {
+    res.sendFile(path.join(__dirname, 'index.html'));
+  }
 });
 
 // Launch server
