@@ -7,7 +7,6 @@ import Facilities from './components/Facilities.jsx';
 import Academics from './components/Academics.jsx';
 import Admissions from './components/Admissions.jsx';
 import NoticeBoard from './components/NoticeBoard.jsx';
-import Portals from './components/Portals.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import LoginModal from './components/LoginModal.jsx';
@@ -163,9 +162,6 @@ export default function App() {
 
       {/* NOTICE BOARD BOARD */}
       <NoticeBoard />
-
-      {/* DIGITAL PORTALS DECK */}
-      <Portals onTriggerLogin={handleTriggerLogin} />
 
       {/* CONTACT & MAP SECTION */}
       <Contact />

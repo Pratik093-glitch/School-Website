@@ -1,8 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 export default function Header({ currentTheme, toggleTheme, onTriggerLogin, activeSection }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  // Close dropdown on click outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -108,12 +121,29 @@ export default function Header({ currentTheme, toggleTheme, onTriggerLogin, acti
             >
               {currentTheme === 'dark' ? <i className="ti ti-sun"></i> : <i className="ti ti-moon"></i>}
             </button>
-            <button 
-              className="btn btn-secondary nav-login-btn" 
-              onClick={() => onTriggerLogin('student')}
-            >
-              <i className="ti ti-login"></i> Login
-            </button>
+            <div className="login-dropdown-container" ref={dropdownRef} style={{ position: 'relative' }}>
+              <button 
+                className={`btn btn-secondary nav-login-btn ${isDropdownOpen ? 'active' : ''}`} 
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                style={{ gap: '4px' }}
+              >
+                <i className="ti ti-login"></i> Login <i className="ti ti-chevron-down" style={{ fontSize: '0.75rem', transition: 'transform 0.2s', transform: isDropdownOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}></i>
+              </button>
+              
+              {isDropdownOpen && (
+                <div className="nav-login-dropdown glassmorphic-dropdown">
+                  <button onClick={() => { onTriggerLogin('student'); setIsDropdownOpen(false); }}>
+                    <i className="ti ti-school"></i> Student Portal
+                  </button>
+                  <button onClick={() => { onTriggerLogin('parent'); setIsDropdownOpen(false); }}>
+                    <i className="ti ti-users-group"></i> Parent Portal
+                  </button>
+                  <button onClick={() => { onTriggerLogin('teacher'); setIsDropdownOpen(false); }}>
+                    <i className="ti ti-teacher"></i> Teacher Portal
+                  </button>
+                </div>
+              )}
+            </div>
             <div 
               className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`} 
               id="hamburgerMenu"
